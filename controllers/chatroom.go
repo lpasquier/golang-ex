@@ -67,7 +67,7 @@ func chatroom() {
 				subscribers.PushBack(sub) // Add user to the end of list.
 				// Publish a JOIN event.
 				publish <- newEvent(models.EVENT_JOIN, sub.Name, "")
-				beego.Info("New user:", sub.Name, ";WebSocket:", sub.Conn != nil)
+				beego.Info("Nouvel Utilisateur:", sub.Name, ";WebSocket:", sub.Conn != nil)
 			} else {
 				beego.Info("Old user:", sub.Name, ";WebSocket:", sub.Conn != nil)
 			}
