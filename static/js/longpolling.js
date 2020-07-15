@@ -10,9 +10,9 @@ var fetch = function () {
             switch (event.Type) {
             case 0: // JOIN
                 if (event.User == $('#uname').text()) {
-                    $("#chatbox li").first().before("<li>You joined the chat room.</li>");
+                    $("#chatbox li").first().before("<li>Bienvenue dans la salle de discussions.</li>");
                 } else {
-                    $("#chatbox li").first().before("<li>" + event.User + " joined the chat room.</li>");
+                    $("#chatbox li").first().before("<li>" + event.User + " a rejoint la ssalle de discussion.</li>");
                 }
                 break;
             case 1: // LEAVE
